@@ -1,1 +1,4 @@
-<h1>Your names capitalized are <%= @name.capitalize %> </h1>
+<h1>Your name is  <%= @name.capitalize %> </h1>
+<%if @name.start_with?("a")%>
+Hey, your name starts with the first alphabet
+<%end%>
