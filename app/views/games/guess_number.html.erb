@@ -1,0 +1,11 @@
+<h2> The number you guessed is <%= @number%> <h2>
+<% number = 30.to_s %>
+<% if @number == number %>
+That's the right number, You Win!!!!! 
+<% end %>
+<% if @number > number %>
+Almost there but try to guess lower next time !!
+<%end%>
+<% if @number < number %>
+Nearly there but try to guess higher next time !!
+<%end%>
